@@ -1,3 +1,5 @@
 module.exports = {
-    publicPath: '/qr-code-vue/'
+    publicPath: process.env.NODE_ENV === 'production'
+        ? '/qr-code-vue/'
+        : '/'
 }
